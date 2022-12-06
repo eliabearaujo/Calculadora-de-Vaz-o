@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Calculadora Vazão</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="container-value">
+      <div class="constant"><span class="param">L<sub>sub</sub>=</span><span class="Lsub">2</span><span class="unity">m</span></div>
+      <div class="constant"><span class="param">L<sub>1</sub>=</span><span class="L1">4</span><span class="unity">m</span></div>
+      <div class="constant"><span class="param">L<sub>2</sub>=</span><span class="L2">4</span><span class="unity">m</span></div>
+      <div class="constant"><span class="param">L<sub>3</sub>=</span><span class="L3">10</span><span class="unity">m</span></div>
+      <div class="constant"><span class="param">L<sub>5</sub>=</span><span class="L5">2</span><span class="unity">m</span></div>
+      <div class="constant"><span class="param">T=</span><span class="T">12</span><span class="unity">h</span></div>
+    </div>
+    <aside>
+      <form class="form">
+        <div class="input-L4">
+          <label for="L4"><span class="param">L<sub>4</sub></label>
+          <input type="number" id="L4">
+          <span>m</span>
+        </div>
+        <div class="input-Q">
+          <label for="Q"><span class="param">Q</label>
+          <input type="number" id="Q">
+          <span>L/s</span>
+        </div>
+        <button type="submit" class="calcular">
+          Calcular
+        </button>
+      </form>
+    </aside>
+    <div class="result">
+      <img src="./captura.png" alt="">
+      ola
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
