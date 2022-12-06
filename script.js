@@ -21,12 +21,26 @@ function getValue() {
   const vazao = q.value / 1000;
   const tempo = +t.innerText;
   const dRec = calcTubulacao(vazao, t.innerText) * 1000;
-  console.log(dRec);
+  const dc = calcDComercial(dRec);
+  console.log(dc);
 }
 
 function calcTubulacao(vazao, tempo) {
   const dRec = 1.3 * Math.sqrt(vazao) * Math.pow(tempo / 24, 0.25);
   return dRec;
+}
+
+function calcDComercial(dRec) {
+  let diametroComercial = 0;
+  let diametroSuc = 0;
+  dComercial.forEach((diametro, index) => {
+    if (dRec > diametro && dRec < dComercial[index + 1]) {
+      diametroComercial = dComercial[index + 1];
+      diametroSuc = dComercial[index + 2];
+      console.log(diametroComercial);
+      console.log(diametroSuc);
+    }
+  });
 }
 
 function calcVelocidade(vazao, diametroRec, diametroSuc) {
