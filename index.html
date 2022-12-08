@@ -15,12 +15,14 @@
 <body>
   <div class="container">
     <div class="container-value">
-      <div class="constant"><span class="param">L<sub>sub</sub>=</span><span class="Lsub">2</span><span class="unity">m</span></div>
-      <div class="constant"><span class="param">L<sub>1</sub>=</span><span class="L1">4</span><span class="unity">m</span></div>
-      <div class="constant"><span class="param">L<sub>2</sub>=</span><span class="L2">4</span><span class="unity">m</span></div>
-      <div class="constant"><span class="param">L<sub>3</sub>=</span><span class="L3">10</span><span class="unity">m</span></div>
-      <div class="constant"><span class="param">L<sub>5</sub>=</span><span class="L5">2</span><span class="unity">m</span></div>
-      <div class="constant"><span class="param">T=</span><span class="T">12</span><span class="unity">h</span></div>
+      <div class="constant"><span class="param">L<sub>sub</sub> = </span><span class="Lsub">2</span><span class="unity">m</span></div>
+      <div class="constant"><span class="param">L<sub>1</sub> = </span><span class="L1">4</span><span class="unity">m</span></div>
+      <div class="constant"><span class="param">L<sub>2</sub> = </span><span class="L2">4</span><span class="unity">m</span></div>
+      <div class="constant"><span class="param">L<sub>3</sub> = </span><span class="L3">10</span><span class="unity">m</span></div>
+      <div class="constant"><span class="param">L<sub>5</sub> = </span><span class="L5">2</span><span class="unity">m</span></div>
+      <div class="constant"><span class="param">T = </span><span class="T">12</span><span class="unity">h</span></div>
+      <div class="constant"><span class="param">Temp = </span><span class="Temp">20</span><span class="unity">°C</span></div>
+      <div class="constant"><span class="param">PVC</span></div>
     </div>
     <aside>
       <form class="form">
@@ -30,18 +32,45 @@
           <span>m</span>
         </div>
         <div class="input-Q">
-          <label for="Q"><span class="param">Q</label>
+          <label for="Q"><span class="param">Vazão</label>
           <input type="number" id="Q">
           <span>L/s</span>
         </div>
-        <button type="submit" class="calcular">
-          Calcular
-        </button>
+        <div class="input-Lsuc">
+          <label for="Lsuc"><span class="param">Leq<sub>Suc</sub></label>
+          <input type="number" id="Lsuc">
+          <span>m</span>
+        </div>
+        <div class="input-Ksuc">
+          <label for="Ksuc"><span class="param">K<sub>Suc</sub></label>
+          <input type="number" id="Ksuc">
+          <span>m</span>
+        </div>
+        <div class="input-Lrec">
+          <label for="Lrec"><span class="param">Leq<sub>Rec</sub></label>
+          <input type="number" id="Lrec">
+          <span>m</span>
+        </div>
+        <div class="input-Krec">
+          <label for="Krec"><span class="param">K<sub>Rec</sub></label>
+          <input type="number" id="Krec">
+          <span>m</span>
+        </div>
+        <div class="Watt">
+          <label for="Watt"><span class="param">Potência</label>
+          <input type="number" id="Watt">
+          <span>W</span>
+        </div>
+        <div class="altura">
+          <label for="altura"><span class="param">Altura Manométrica</label>
+          <input type="number" id="altura">
+          <span>m</span>
+        </div>
       </form>
     </aside>
     <div class="result">
       <img src="./captura.png" alt="">
-      ola
+
     </div>
   </div>
 

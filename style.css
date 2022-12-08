@@ -42,10 +42,31 @@ aside {
   display: flex;
   flex-direction: column;
 }
+label {
+  display: block;
+}
 .input-Q {
   margin-top: 30px;
 }
-button {
+.input-Lsuc {
+  margin-top: 30px;
+}
+.input-Ksuc {
+  margin-top: 30px;
+}
+.input-Lrec {
+  margin-top: 30px;
+}
+.input-Krec {
+  margin-top: 30px;
+}
+.Watt {
+  margin-top: 30px;
+}
+.altura {
+  margin-top: 30px;
+}
+.calcular {
   margin-top: 30px;
 }
 .result {
